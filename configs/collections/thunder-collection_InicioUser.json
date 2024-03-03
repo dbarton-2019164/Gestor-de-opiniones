@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "InicioUser",
+    "dateExported": "2024-03-03T22:23:06.285Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e5066d63-5795-4f61-9076-2abf2f550536",
+            "colId": "b3cbe27c-a918-485d-9891-0df9c903d34b",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:8080/opinions/v1/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-03T20:53:05.498Z",
+            "modified": "2024-03-03T22:22:53.586Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user\": \"Usuari1o\",\n  \"password\" : \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1afa76c5-5042-48df-aff1-6d96095a916e",
+            "colId": "b3cbe27c-a918-485d-9891-0df9c903d34b",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:8080/opinions/v1/users",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-03T20:53:05.499Z",
+            "modified": "2024-03-03T21:05:05.585Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"Diego\",\n  \"user\" : \"Usuari1o\",\n  \"email\": \"diego132@kinal.edu.gt\",\n  \"password\" : \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
