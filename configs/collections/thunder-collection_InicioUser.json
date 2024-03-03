@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "InicioUser",
-    "dateExported": "2024-03-03T22:23:06.285Z",
+    "dateExported": "2024-03-03T23:41:15.474Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,12 +14,12 @@
             "method": "GET",
             "sortNum": 10000,
             "created": "2024-03-03T20:53:05.498Z",
-            "modified": "2024-03-03T22:22:53.586Z",
+            "modified": "2024-03-03T23:41:05.996Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"user\": \"Usuari1o\",\n  \"password\" : \"1234567\"\n}",
+                "raw": "{\n  \"user\": \"Usuari1o\",\n  \"password\" : \"123456\"\n}",
                 "form": []
             },
             "tests": []
@@ -39,6 +39,54 @@
             "body": {
                 "type": "json",
                 "raw": "{\n  \"name\" : \"Diego\",\n  \"user\" : \"Usuari1o\",\n  \"email\": \"diego132@kinal.edu.gt\",\n  \"password\" : \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e4ce613a-1348-4fb8-8304-d359e9cb7619",
+            "colId": "b3cbe27c-a918-485d-9891-0df9c903d34b",
+            "containerId": "",
+            "name": "editName",
+            "url": "http://localhost:8080/opinions/v1/users",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-03T22:39:03.140Z",
+            "modified": "2024-03-03T23:16:20.145Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTYwMTMzZTRhNTcwOWY0YjM5MmYiLCJpYXQiOjE3MDk1MDY4NzQsImV4cCI6MTcwOTUxMDQ3NH0.64HwVIWhCSqkSFsIxVKmOI39k7xhCYIupWNQP8rEYlo"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"Editado jijija\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7ffcbf52-0f17-4e12-bf70-408c823f91da",
+            "colId": "b3cbe27c-a918-485d-9891-0df9c903d34b",
+            "containerId": "",
+            "name": "editName Copy",
+            "url": "http://localhost:8080/opinions/v1/users/password/",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-03T23:36:49.515Z",
+            "modified": "2024-03-03T23:40:56.340Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTYwMTMzZTRhNTcwOWY0YjM5MmYiLCJpYXQiOjE3MDk1MDY4NzQsImV4cCI6MTcwOTUxMDQ3NH0.64HwVIWhCSqkSFsIxVKmOI39k7xhCYIupWNQP8rEYlo"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"oldPassword\" : \"123456789\",\n  \"newPassword\" : \"123456\"\n}",
                 "form": []
             },
             "tests": []
