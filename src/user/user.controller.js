@@ -76,7 +76,7 @@ export const registerUser = async (req, res) => {
        token = await generateJWT(usuario.id);
     
     res.status(200).json({
-      msg: "Acceso concedido",
+      msg: "access granted",
       token,
     });
   };

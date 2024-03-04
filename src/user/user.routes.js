@@ -11,8 +11,8 @@ const router = Router();
 router.post(
   "/",
   [
-    check("name", "The name can't be empity").not().isEmpty(),
-    check("user", "The user can't be empity").not().isEmpty(),
+    check("name", "The name can't be empty").not().isEmpty(),
+    check("user", "The user can't be empty").not().isEmpty(),
     check("user").custom(userExists),
     check("email", "Invalid email").isEmail(),
     check("email").custom(emailExists),
@@ -28,7 +28,7 @@ router.put(
   "/",
   [
     validarJWT,
-    check("name", "The name can't be empity").not().isEmpty(),
+    check("name", "The name can't be empty").not().isEmpty(),
     validarCampos,
   ],
   editName

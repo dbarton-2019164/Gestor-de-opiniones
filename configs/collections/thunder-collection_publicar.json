@@ -1,0 +1,76 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "publicar",
+    "dateExported": "2024-03-04T02:42:52.471Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0c7efa75-3180-4487-92b2-1e246d5d936e",
+            "colId": "98066565-8813-4da7-bb41-ca85f75ae64e",
+            "containerId": "",
+            "name": "crearPublicacion",
+            "url": "http://localhost:8080/opinions/v1/publications",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T01:17:44.947Z",
+            "modified": "2024-03-04T02:22:42.825Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTYwMTMzZTRhNTcwOWY0YjM5MmYiLCJpYXQiOjE3MDk1MTg5MjgsImV4cCI6MTcwOTUyMjUyOH0.S2ceqb1snBytEhWiEU-3DpC2P0cA5kpiZ32-Nqf5eVw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\" : \"Prueba\",\n  \"category\": \"Religión\",\n  \"text\": \"Papulandia\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c0df4d97-1c51-45b4-85d9-38406bc30dfc",
+            "colId": "98066565-8813-4da7-bb41-ca85f75ae64e",
+            "containerId": "",
+            "name": "editarPublicacion",
+            "url": "http://localhost:8080/opinions/v1/publications/65e5307226132bd524c92749",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-03-04T02:13:56.909Z",
+            "modified": "2024-03-04T02:30:40.567Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTYwMTMzZTRhNTcwOWY0YjM5MmYiLCJpYXQiOjE3MDk1MTkzODAsImV4cCI6MTcwOTUyMjk4MH0.ySoOzwkKv8TJqfQgZ1OeVklP0yUN354ScOZB8vuU4RM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\" : \"Titulo\",\n  \"category\": \"Religión\",\n  \"text\": \"No se\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "11e78d9d-73d5-4b53-94b7-7d6c18181aa1",
+            "colId": "98066565-8813-4da7-bb41-ca85f75ae64e",
+            "containerId": "",
+            "name": "eliminarPublicacion",
+            "url": "http://localhost:8080/opinions/v1/publications/65e52e8717a1a41e319a0492",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-03-04T02:40:17.558Z",
+            "modified": "2024-03-04T02:42:00.405Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTU5M2YwZjQ0ZDgwODY1N2Y5MmYiLCJpYXQiOjE3MDk1MjAwOTQsImV4cCI6MTcwOTUyMzY5NH0.Wp7o6bUQzmWr1-qon417XAZdybnzUzKrY5d2NymeAac"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

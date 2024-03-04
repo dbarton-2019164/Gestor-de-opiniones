@@ -3,28 +3,22 @@
 import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
-<<<<<<< HEAD
-import { dbConnection } from "./mongo.js";
-=======
 import cors from 'cors';
 import { dbConnection } from "./mongo.js";
-import adminRoutes from "../src/user/user.routes.js";
->>>>>>> ft/users
+import userRoutes from "../src/user/user.routes.js";
+import publicationsRoutes from "../src/publications/publications.routes.js";
 
 class Server {
   constructor() {
     this.app = express();
     this.port = process.env.PORT;
-<<<<<<< HEAD
-    this.conectarDB();
-=======
     this.userPath = '/opinions/v1/users';
-    
+    this.publicationPath = '/opinions/v1/publications';
+
 
     this.middlewares();
     this.conectarDB();
     this.routes();
->>>>>>> ft/users
   }
 
   async conectarDB() {
@@ -43,13 +37,10 @@ class Server {
     this.app.use(morgan("dev"));
   }
 
-<<<<<<< HEAD
-  routes() {}
-=======
   routes() {
-    this.app.use(this.userPath, adminRoutes);
+    this.app.use(this.userPath, userRoutes);
+    this.app.use(this.publicationPath, publicationsRoutes);
   }
->>>>>>> ft/users
 
   listen() {
     this.app.listen(this.port, () => {
