@@ -1,0 +1,101 @@
+[{
+  "_id": {
+    "$oid": "65e54cf27127a315e21367ed"
+  },
+  "title": "Peten",
+  "category": "Viajes",
+  "text": "Fui a peten",
+  "creator": {
+    "$oid": "65e54bee7127a315e21367d2"
+  },
+  "comentarios": [],
+  "condition": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5517a17e8ccb46d11e7bf"
+  },
+  "title": "Publicacion",
+  "category": "Religión",
+  "text": "No tengo idea",
+  "creator": {
+    "$oid": "65e54bee7127a315e21367d2"
+  },
+  "comentarios": [],
+  "condition": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5518417e8ccb46d11e7c3"
+  },
+  "title": "Publicacion",
+  "category": "Religión",
+  "text": "No tengo idea",
+  "creator": {
+    "$oid": "65e54bee7127a315e21367d2"
+  },
+  "comentarios": [
+    {
+      "$oid": "65e5540a0dbd43bdac264d3f"
+    },
+    {
+      "$oid": "65e556a24fd9a1d6b843f82c"
+    }
+  ],
+  "condition": true,
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "65e556610b55967325d9d70d"
+  },
+  "title": "Publicacion 2",
+  "category": "Religión",
+  "text": "No tengo idea",
+  "creator": {
+    "$oid": "65e54bee7127a315e21367d2"
+  },
+  "comentarios": [],
+  "condition": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5574b0de4d8b0dd13cfc5"
+  },
+  "title": "Publicacion 3",
+  "category": "Religión",
+  "text": "No tengo idea",
+  "creator": {
+    "$oid": "65e54bee7127a315e21367d2"
+  },
+  "comentarios": [],
+  "condition": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e557530de4d8b0dd13cfc8"
+  },
+  "title": "Publicacion 3",
+  "category": "Religión",
+  "text": "qqqqq",
+  "creator": {
+    "$oid": "65e54bee7127a315e21367d2"
+  },
+  "comentarios": [
+    {
+      "$oid": "65e557a80de4d8b0dd13cfd0"
+    },
+    {
+      "$oid": "65e557b10de4d8b0dd13cfd6"
+    },
+    {
+      "$oid": "65e557b70de4d8b0dd13cfdc"
+    }
+  ],
+  "condition": true,
+  "__v": 3
+}]

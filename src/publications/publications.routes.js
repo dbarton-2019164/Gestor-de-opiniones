@@ -2,7 +2,7 @@ import { Router } from "express";
 import { check } from "express-validator";
 import { validarJWT } from "../middlewares/validar-jwt.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
-import { categoryExists } from "../helpers/db-validator.js";
+import { categoryExists, getCategories, publicationExists } from "../helpers/db-validator.js";
 const router = Router();
 import { publicationPOST, publicationPUT, publicationDELETE } from "./publications.controller.js"
 router.post(
@@ -17,12 +17,17 @@ router.post(
     ],
     publicationPOST
 )
+router.get(
+    "/",
+    getCategories
+)
 
 router.put(
     "/:id",
     [
         validarJWT,
         check("id").isMongoId(),
+        check("id").custom(publicationExists),
         validarCampos,
     ],
     publicationPUT
@@ -34,6 +39,7 @@ router.delete(
     [
         validarJWT,
         check("id").isMongoId(),
+        check("id").custom(publicationExists),
         validarCampos,
     ],
     publicationDELETE

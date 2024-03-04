@@ -1,0 +1,76 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "comentar",
+    "dateExported": "2024-03-04T05:12:07.817Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "4a4cf0e2-0ca8-48f4-addf-30e447a902fd",
+            "colId": "84c888a6-b977-44d1-a8e5-47bf56554f31",
+            "containerId": "",
+            "name": "commentPUT",
+            "url": "http://localhost:8080/opinions/v1/comments/65e557b70de4d8b0dd13cfdc",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2024-03-04T03:32:32.189Z",
+            "modified": "2024-03-04T05:11:28.814Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NGJlZTcxMjdhMzE1ZTIxMzY3ZDIiLCJpYXQiOjE3MDk1MjYyMDMsImV4cCI6MTcwOTUyOTgwM30.KnE4CrewiK4KuwB-2V9CPubfajdgwfkCT4VDYGp7fyE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"text\" : \"editandooo\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "99e84c06-f2b0-40d9-8b3b-9944b3ebd07f",
+            "colId": "84c888a6-b977-44d1-a8e5-47bf56554f31",
+            "containerId": "",
+            "name": "commentDELETE",
+            "url": "http://localhost:8080/opinions/v1/comments/65e556a24fd9a1d6b843f82c",
+            "method": "DELETE",
+            "sortNum": 15000,
+            "created": "2024-03-04T04:15:20.125Z",
+            "modified": "2024-03-04T05:05:58.035Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NGJlZTcxMjdhMzE1ZTIxMzY3ZDIiLCJpYXQiOjE3MDk1MjYyMDMsImV4cCI6MTcwOTUyOTgwM30.KnE4CrewiK4KuwB-2V9CPubfajdgwfkCT4VDYGp7fyE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cacaa03a-16f0-4c0d-9a50-aebd1620c538",
+            "colId": "84c888a6-b977-44d1-a8e5-47bf56554f31",
+            "containerId": "",
+            "name": "commentPOST",
+            "url": "http://localhost:8080/opinions/v1/comments/65e557530de4d8b0dd13cfc8",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-04T04:08:00.532Z",
+            "modified": "2024-03-04T05:10:15.895Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NGJlZTcxMjdhMzE1ZTIxMzY3ZDIiLCJpYXQiOjE3MDk1MjYyMDMsImV4cCI6MTcwOTUyOTgwM30.KnE4CrewiK4KuwB-2V9CPubfajdgwfkCT4VDYGp7fyE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"text\" : \"Comentandooo fin\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

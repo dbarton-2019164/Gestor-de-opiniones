@@ -1,0 +1,44 @@
+[{
+  "_id": {
+    "$oid": "65e54bee7127a315e21367d2"
+  },
+  "name": "Diego",
+  "user": "Usuario",
+  "email": "diego@kinal.edu.gt",
+  "password": "$2a$10$jiXwCe4/5ALIzb3JzRTvVu9EWg9O8KncHwqg3Zhhxs6wMaQBnpJHa",
+  "condition": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e54bf97127a315e21367d6"
+  },
+  "name": "Daniel",
+  "user": "Usuario2",
+  "email": "diego2@kinal.edu.gt",
+  "password": "$2a$10$nknb0tfWEWaFBBrE74oSL.gEUjYNUCH1zEaUlQStO5KgErTDlKU/a",
+  "condition": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e54c017127a315e21367da"
+  },
+  "name": "Daniel",
+  "user": "Usuario3",
+  "email": "diego23@kinal.edu.gt",
+  "password": "$2a$10$k3DVE6pG2UricvB.qvmbLu.EiwclXoFFyMNtqOT2ML8ia2iKImzi2",
+  "condition": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e54c757127a315e21367e5"
+  },
+  "name": "Editado jijija",
+  "user": "admin",
+  "email": "admin@gmail.com",
+  "password": "$2a$10$ZR/8Rhbm5fABpOHOtnFMV.hLASw0SaZzMVutvkq6siQo3KBnzEA/K",
+  "condition": true,
+  "__v": 0
+}]

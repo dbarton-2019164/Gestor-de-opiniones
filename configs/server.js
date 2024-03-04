@@ -7,13 +7,14 @@ import cors from 'cors';
 import { dbConnection } from "./mongo.js";
 import userRoutes from "../src/user/user.routes.js";
 import publicationsRoutes from "../src/publications/publications.routes.js";
-
+import commentsRoutes from "../src/comments/comments.routes.js";
 class Server {
   constructor() {
     this.app = express();
     this.port = process.env.PORT;
     this.userPath = '/opinions/v1/users';
     this.publicationPath = '/opinions/v1/publications';
+    this.commentPath = '/opinions/v1/comments';
 
 
     this.middlewares();
@@ -40,6 +41,7 @@ class Server {
   routes() {
     this.app.use(this.userPath, userRoutes);
     this.app.use(this.publicationPath, publicationsRoutes);
+    this.app.use(this.commentPath, commentsRoutes);
   }
 
   listen() {

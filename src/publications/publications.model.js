@@ -19,11 +19,27 @@ const PublicationsSchema = new mongoose.Schema({
         type: Schema.Types.ObjectId,
         ref: "User",
     },
+    comentarios: {
+        type: [
+            {
+                type: Schema.Types.ObjectId,
+                ref : "Comments"
+            }
+        ]
+    },
     condition: {
         type: Boolean,
         default: true
     }
 });
+
+
+PublicationsSchema.methods.addCommentById = async function(commentId) {
+    this.comentarios.push(commentId);
+    await this.save();
+};
+
+
 PublicationsSchema.methods.toJSON = function (){
     const { __v, _id, ...resto} = this.toObject();
     resto.uid = _id;

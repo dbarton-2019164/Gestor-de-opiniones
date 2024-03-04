@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "InicioUser",
-    "dateExported": "2024-03-04T02:42:28.087Z",
+    "dateExported": "2024-03-04T05:11:54.185Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,7 +14,7 @@
             "method": "GET",
             "sortNum": 10000,
             "created": "2024-03-03T20:53:05.498Z",
-            "modified": "2024-03-04T02:41:34.911Z",
+            "modified": "2024-03-04T04:23:23.413Z",
             "headers": [],
             "params": [],
             "body": {
@@ -33,12 +33,12 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-03-03T20:53:05.499Z",
-            "modified": "2024-03-04T02:27:34.701Z",
+            "modified": "2024-03-04T04:20:40.413Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\" : \"Diego\",\n  \"user\" : \"Usuario\",\n  \"email\": \"diego@kinal.edu.gt\",\n  \"password\" : \"1234567\"\n}",
+                "raw": "{\n  \"name\" : \"Daniel\",\n  \"user\" : \"admin\",\n  \"email\": \"admin@gmail.com\",\n  \"password\" : \"1234567\"\n}",
                 "form": []
             },
             "tests": []
@@ -52,11 +52,11 @@
             "method": "PUT",
             "sortNum": 30000,
             "created": "2024-03-03T22:39:03.140Z",
-            "modified": "2024-03-03T23:16:20.145Z",
+            "modified": "2024-03-04T04:22:25.522Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTYwMTMzZTRhNTcwOWY0YjM5MmYiLCJpYXQiOjE3MDk1MDY4NzQsImV4cCI6MTcwOTUxMDQ3NH0.64HwVIWhCSqkSFsIxVKmOI39k7xhCYIupWNQP8rEYlo"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NGM3NTcxMjdhMzE1ZTIxMzY3ZTUiLCJpYXQiOjE3MDk1MjYxMzUsImV4cCI6MTcwOTUyOTczNX0.U34QAAYIybqmYftHToDRyXsMJHYHhCSeegtVM9hbHvk"
                 }
             ],
             "params": [],
@@ -76,11 +76,11 @@
             "method": "PUT",
             "sortNum": 40000,
             "created": "2024-03-03T23:36:49.515Z",
-            "modified": "2024-03-03T23:40:56.340Z",
+            "modified": "2024-03-04T04:22:31.740Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTYwMTMzZTRhNTcwOWY0YjM5MmYiLCJpYXQiOjE3MDk1MDY4NzQsImV4cCI6MTcwOTUxMDQ3NH0.64HwVIWhCSqkSFsIxVKmOI39k7xhCYIupWNQP8rEYlo"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NGM3NTcxMjdhMzE1ZTIxMzY3ZTUiLCJpYXQiOjE3MDk1MjYxMzUsImV4cCI6MTcwOTUyOTczNX0.U34QAAYIybqmYftHToDRyXsMJHYHhCSeegtVM9hbHvk"
                 }
             ],
             "params": [],

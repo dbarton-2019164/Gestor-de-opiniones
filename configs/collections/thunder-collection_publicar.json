@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "publicar",
-    "dateExported": "2024-03-04T02:42:52.471Z",
+    "dateExported": "2024-03-04T05:12:00.130Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,17 +14,17 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-03-04T01:17:44.947Z",
-            "modified": "2024-03-04T02:22:42.825Z",
+            "modified": "2024-03-04T05:08:35.027Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTYwMTMzZTRhNTcwOWY0YjM5MmYiLCJpYXQiOjE3MDk1MTg5MjgsImV4cCI6MTcwOTUyMjUyOH0.S2ceqb1snBytEhWiEU-3DpC2P0cA5kpiZ32-Nqf5eVw"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NGJlZTcxMjdhMzE1ZTIxMzY3ZDIiLCJpYXQiOjE3MDk1MjYyMDMsImV4cCI6MTcwOTUyOTgwM30.KnE4CrewiK4KuwB-2V9CPubfajdgwfkCT4VDYGp7fyE"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"title\" : \"Prueba\",\n  \"category\": \"Religión\",\n  \"text\": \"Papulandia\"\n  \n}",
+                "raw": "{\n  \"title\" : \"Publicacion 3\",\n  \"category\": \"Religión\",\n  \"text\": \"qqqqq\"\n  \n}",
                 "form": []
             },
             "tests": []
@@ -34,21 +34,21 @@
             "colId": "98066565-8813-4da7-bb41-ca85f75ae64e",
             "containerId": "",
             "name": "editarPublicacion",
-            "url": "http://localhost:8080/opinions/v1/publications/65e5307226132bd524c92749",
+            "url": "http://localhost:8080/opinions/v1/publications/65e54cf27127a315e21367ed",
             "method": "PUT",
             "sortNum": 20000,
             "created": "2024-03-04T02:13:56.909Z",
-            "modified": "2024-03-04T02:30:40.567Z",
+            "modified": "2024-03-04T05:07:48.868Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTYwMTMzZTRhNTcwOWY0YjM5MmYiLCJpYXQiOjE3MDk1MTkzODAsImV4cCI6MTcwOTUyMjk4MH0.ySoOzwkKv8TJqfQgZ1OeVklP0yUN354ScOZB8vuU4RM"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NGJlZTcxMjdhMzE1ZTIxMzY3ZDIiLCJpYXQiOjE3MDk1MjYyMDMsImV4cCI6MTcwOTUyOTgwM30.KnE4CrewiK4KuwB-2V9CPubfajdgwfkCT4VDYGp7fyE"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"title\" : \"Titulo\",\n  \"category\": \"Religión\",\n  \"text\": \"No se\"\n  \n}",
+                "raw": "{\n  \"title\" : \"Peten\",\n  \"category\": \"Viajes\",\n  \"text\": \"Fui a peten\"\n  \n}",
                 "form": []
             },
             "tests": []
@@ -58,11 +58,30 @@
             "colId": "98066565-8813-4da7-bb41-ca85f75ae64e",
             "containerId": "",
             "name": "eliminarPublicacion",
-            "url": "http://localhost:8080/opinions/v1/publications/65e52e8717a1a41e319a0492",
+            "url": "http://localhost:8080/opinions/v1/publications/65e556610b55967325d9d70d",
             "method": "DELETE",
             "sortNum": 30000,
             "created": "2024-03-04T02:40:17.558Z",
-            "modified": "2024-03-04T02:42:00.405Z",
+            "modified": "2024-03-04T05:04:48.917Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NGJlZTcxMjdhMzE1ZTIxMzY3ZDIiLCJpYXQiOjE3MDk1MjYyMDMsImV4cCI6MTcwOTUyOTgwM30.KnE4CrewiK4KuwB-2V9CPubfajdgwfkCT4VDYGp7fyE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "17ca12ad-17eb-431b-b906-5cf0a432f3ef",
+            "colId": "98066565-8813-4da7-bb41-ca85f75ae64e",
+            "containerId": "",
+            "name": "mostrarCategorias",
+            "url": "http://localhost:8080/opinions/v1/publications/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-04T04:29:29.672Z",
+            "modified": "2024-03-04T04:29:54.274Z",
             "headers": [
                 {
                     "name": "x-token",

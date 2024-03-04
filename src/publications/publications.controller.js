@@ -1,19 +1,12 @@
 import { response, request } from "express";
-import bcryptjs from 'bcryptjs';
-import { generateJWT } from "../helpers/generate-jwt.js"
 import publicationsModel from "./publications.model.js";
 import { categoryExists } from "../helpers/db-validator.js";
 export const publicationPOST = async (req, res) => {
     const { title, category, text } = req.body;
     const usuarioAutenticado = req.usuario;
-
     try {
-
-
         const publication = new publicationsModel({ title, category, text, creator: usuarioAutenticado.id });
-
         await publication.save();
-
         res.status(200).json({
             msg: "successfully published",
             publication,
@@ -30,7 +23,7 @@ export const publicationPUT = async (req, res) => {
     const usuarioAutenticado = req.usuario;
     const publicationUser = await publicationsModel.findById(id);
     var c = true;
-
+    
     if (publicationUser.creator.toString() !== usuarioAutenticado.id) {
         return res.status(400).json({
             msg: "You can't edit this post"
@@ -44,7 +37,34 @@ export const publicationPUT = async (req, res) => {
         c = false;
     }
     if (c) {
-        await categoryExists(category);
+        const categorias = [
+            "Tecnología",
+            "Ciencia",
+            "Arte y Cultura",
+            "Deportes",
+            "Entretenimiento",
+            "Negocios",
+            "Política",
+            "Salud",
+            "Viajes",
+            "Educación",
+            "Estilo de Vida",
+            "Gastronomía",
+            "Medio Ambiente",
+            "Moda",
+            "Historia",
+            "Religión",
+            "Automóviles",
+            "Música",
+            "Literatura",
+            "Humor",
+        ];
+        if (!categorias.includes(category)) {
+            return res.status(404).json({
+                msg: "Invalid category"
+            });
+        
+          }
     }
     if (!text) {
         text = publicationUser.text
@@ -62,13 +82,12 @@ export const publicationPUT = async (req, res) => {
 };
 
 
-export const publicationDELETE = async (req, res) => {
+
+export const publicationDELETE= async (req, res) => {
     const { id } = req.params;
-  
     const usuarioAutenticado = req.usuario;
     const publicationUser = await publicationsModel.findById(id);
    
-  
     if (publicationUser.creator.toString() !== usuarioAutenticado.id) {
         return res.status(400).json({
             msg: "You can't delete this post"
@@ -76,7 +95,7 @@ export const publicationDELETE = async (req, res) => {
     }
  
     try {
-        await publicationsModel.findByIdAndUpdate(id, { codition : false });
+        await publicationsModel.findByIdAndUpdate(id, { condition : false });
        
         res.status(200).json({
             msg: "Deleted post",
